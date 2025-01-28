@@ -1,4 +1,3 @@
-console.log('moiiii');
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     console.log('hallo');
     console.log('message.action: ', message.action)
