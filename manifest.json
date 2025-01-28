@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Slimknippen naar Google Agenda",
+    "version": "1.0",
+    "permissions": ["identity", "scripting"],
+    "host_permissions": ["https://www.googleapis.com/*"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://www.slimknippen.nl/*"],
+        "js": ["contentScript.js"]
+      }
+    ],
+    "oauth2": {
+      "client_id": "[GOOGLE CALENDAR API CLIENT ID",
+      "scopes": ["https://www.googleapis.com/auth/calendar.events"]
+    }
+  }
+  
