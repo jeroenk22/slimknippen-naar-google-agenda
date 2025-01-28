@@ -1,6 +1,4 @@
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
-    console.log('hallo');
-    console.log('message.action: ', message.action)
     if (message.action === 'getAuthToken') {
         chrome.identity.getAuthToken({ interactive: true }, token => {
             console.log('getauthtoken is: ', chrome.identity.getAuthToken());
