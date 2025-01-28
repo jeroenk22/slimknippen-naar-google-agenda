@@ -14,7 +14,7 @@
       }
     ],
     "oauth2": {
-      "client_id": "[GOOGLE CALENDAR API CLIENT ID",
+      "client_id": "[GOOGLE CALENDAR API CLIENT ID]",
       "scopes": ["https://www.googleapis.com/auth/calendar.events"]
     }
   }
